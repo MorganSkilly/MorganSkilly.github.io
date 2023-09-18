@@ -88,7 +88,7 @@ h3
     }
   }
 
-  @media screen and (min-width: 1000px) {
+  @media screen and (orientation:landscape) {
     .card
     {
         width: 18%;
@@ -134,7 +134,7 @@ h3
     }
   }
 
-  @media screen and (max-width: 1000px) {
+  @media screen and (orientation:portrait) {
     .card
     {
         width: 100%;
