@@ -28,21 +28,6 @@ p
     font-weight: 300;
 }
 
-h1
-{
-    color: rgb(0, 0, 0);
-    font-size: 60px;
-    font-weight: 900;
-    font-style: italic;
-}
-
-h2
-{
-    color: rgb(0, 0, 0);
-    font-size: 25px;
-    font-weight: 700;
-}
-
 h3
 {
     color: rgb(0, 0, 0);
@@ -64,40 +49,13 @@ h3
     margin-top: auto;
 }
 
-.name
-{
-    text-align: left;
-    max-width: 50%;
-    padding-left: 4.5%;
-    padding-right: 4.5%;
-    float: left;
-    overflow:visible;
-    white-space: nowrap;
-}
-
 .fix-stroke
 {
     paint-order: stroke fill;
     -webkit-text-stroke: 1pt rgb(0, 0, 0);
 }
 
-.card
-{
-    width: 18%;
-    margin: 0.5%;
-    background-color: rgba(255, 255, 255, 0.685);
-    text-align: left;
-    vertical-align:bottom;
-}
 
-.content
-{
-    width: 100%;
-    padding: 2%;
-    text-align: center;
-    display:flex;
-    justify-content: center;
-}
 
 .bg {
     background-size: 300% 300%;
@@ -127,5 +85,99 @@ h3
     }
     100% {
       background-position: 0% 50%;
+    }
+  }
+
+  @media screen and (min-width: 1000px) {
+    .card
+    {
+        width: 18%;
+        margin: 0.5%;
+        background-color: rgba(255, 255, 255, 0.685);
+        text-align: left;
+        vertical-align:bottom;
+    }
+
+    .content
+    {
+        width: 100%;
+        padding: 2%;
+        text-align: center;
+        display:flex;
+        justify-content: center;
+    }
+
+    .name
+    {
+        text-align: left;
+        max-width: 50%;
+        padding-left: 4.5%;
+        padding-right: 4.5%;
+        float: left;
+        overflow:visible;
+        white-space: nowrap;
+    }
+
+    h1
+    {
+        color: rgb(0, 0, 0);
+        font-size: 60px;
+        font-weight: 900;
+        font-style: italic;
+    }
+    
+    h2
+    {
+        color: rgb(0, 0, 0);
+        font-size: 25px;
+        font-weight: 700;
+    }
+  }
+
+  @media screen and (max-width: 1000px) {
+    .card
+    {
+        width: 100%;
+        margin: 0.5%;
+        background-color: rgba(255, 255, 255, 0.685);
+        text-align: left;
+    }
+
+    .content
+    {
+        width: 100%;
+        padding: 2%;
+        text-align: center;
+        justify-content: center;
+    }    
+
+    .name
+    {
+        text-align: center;
+        width: 100%;
+        padding-left: 4.5%;
+        padding-right: 4.5%;
+        overflow:visible;
+        white-space: nowrap;
+    }
+
+    .mt-4
+    {
+      height: 100px;
+    }
+
+    h1
+    {
+        color: rgb(0, 0, 0);
+        font-size: 8vw;
+        font-weight: 900;
+        font-style: italic;
+    }
+    
+    h2
+    {
+        color: rgb(0, 0, 0);
+        font-size: 4vw;
+        font-weight: 700;
     }
   }
